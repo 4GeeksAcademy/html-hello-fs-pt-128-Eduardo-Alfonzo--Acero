@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand"><i class="fa-brands fa-instagram p-1">
+                    </i>Instagram</a>
+                <form class="d-flex" role="search">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                        Create a new post
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="informationYourPost">
+                                        <div class="mb-3">
+                                            <label for="caption" class="form-label fw-bold">Caption:</label>
+                                            <textarea class="form-control rounded-3 p-3" id="caption" rows="2"
+                                                placeholder="Add the caption of your post here">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="icon">
+                                        <button class="camera-btn">
+                                            <i class="fa-solid fa-camera"></i>
+                                        </button>
+                                        <button class="location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        Save changes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear p-1"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end p-1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" style="color: red;" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+            </div>
+            </form>
+        </nav>
+        <ul class="nav nav-tabs p-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">
+                    <i class="fa-solid fa-square"></i>
+                </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                
+                <div class="card mx-auto mb-4" style="width:20rem;">
+                    <div class="card-header d-flex align-items-center">
+                        <h5 class="mb-0">My movie Favorite</h5>
+                        <span class="ms-auto small">10/26</span>
+                    </div>
+
+                    <div class="ratio ratio-4x3">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/vengadores-endgame-66575160add0a.jpg"
+                            class="object-fit-cover" alt="">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title fs-6"><strong>280 Like</strong></h5>
+                        <p class="card-text fs-8">Esta pelicula es un buen ejemplo que las peliculas de superheroes
+                            pueden tener un buen
+                            guion</p>
+                    </div>
+                </div>
+
+
+                
+                <div class="card mx-auto mb-4" style="width:20rem;">
+                    <div class="card-header d-flex align-items-center">
+                        <h5 class="mb-0">My Country</h5>
+                        <span class="ms-auto small">10/26</span>
+                    </div>
+
+                    <div class="ratio ratio-4x3">
+                        <img class="object-fit-cover"
+                            src="https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fep01.epimg.net%2Felviajero%2Fvideos%2F2016%2F05%2F09%2Fvideos%2F1462811807_394319_59167000_fotograma_4.jpg?auth=895903e095b6002a0596e5cc05173bb3d94e4de85099cd1e735488bbe98ca484&width=1200&height=675&smart=true"
+                            alt="">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title fs-6"><strong>3800 Like</strong></h5>
+                        <p class="card-text fs-8">
+                            EL SALTO ANGEL la caida de agua mas alta de la tierra ubicado Venezuela mi patria siempre en mi corazon
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div class="card mx-auto mb-4" style="width:20rem;">
+                    <div class="card-header d-flex align-items-center">
+                        <h5 class="mb-0">TOP Anime</h5>
+                        <span class="ms-auto small">10/24</span>
+                    </div>
+
+                    <div class="ratio ratio-4x3">
+                         <img class="object-fit-cover"
+                            src="https://external-preview.redd.it/jujutsu-kaisen-season-3-will-be-some-of-the-best-anime-ever-v0-p0WFRquUzQSEo8nboYUCLPqj5ZhyiL9F6Yuu122FtGQ.jpeg?width=1080&crop=smart&auto=webp&s=5f399ac964444f580725622e12d1633d9db3f987"
+                            alt="">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title fs-6"><strong>574 Like</strong></h5>
+                        <p class="card-text fs-8">
+                            Uno de los mejores anime de los ultimos tiempos
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://hips.hearstapps.com/hmg-prod/images/vengadores-endgame-66575160add0a.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://external-preview.redd.it/jujutsu-kaisen-season-3-will-be-some-of-the-best-anime-ever-v0-p0WFRquUzQSEo8nboYUCLPqj5ZhyiL9F6Yuu122FtGQ.jpeg?width=1080&crop=smart&auto=webp&s=5f399ac964444f580725622e12d1633d9db3f987"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fep01.epimg.net%2Felviajero%2Fvideos%2F2016%2F05%2F09%2Fvideos%2F1462811807_394319_59167000_fotograma_4.jpg?auth=895903e095b6002a0596e5cc05173bb3d94e4de85099cd1e735488bbe98ca484&width=1200&height=675&smart=true"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://play-lh.googleusercontent.com/OJgLqTcMp3qh5WKxM6efsIs7O566_zLvwG3UWTSG--kzWFalDmv2JCJC4PQAfhU1svCeqVHK-V7lVf1qPOsArg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://investx.fr/es/wp-content/uploads/sites/4/2025/11/Laction-des-prix-de-Cardano-et-les-niveaux-a-venir-2025-11-07T064851.636.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://www.orgbluewater.com/wp-content/uploads/2021/10/DJI_0168.jpg.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://s.france24.com/media/display/451ed2b8-eed6-11ea-afdd-005056bf87d6/w:1280/p:16x9/messi-1805.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://www.accioncine.es/wp-content/uploads/2025/09/Guardianes-de-la-Noche-Kimetsu-no-Yaiba-La-Fortaleza-Infinita.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://static.vecteezy.com/system/resources/previews/065/732/282/non_2x/a-joyful-baby-laughing-with-eyes-closed-showing-tiny-baby-teeth-and-deep-dimples-on-the-cheeks-photo.jpeg"
+                            alt="">
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

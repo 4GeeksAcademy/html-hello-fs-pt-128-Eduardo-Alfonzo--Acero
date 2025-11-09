@@ -1,0 +1,38 @@
+.camera-btn,.location {
+  background-color: white;          
+  border: 1px solid #ced4da;      
+  border-radius: 8px;               
+  padding: 8px 12px;                
+  cursor: pointer;                  
+  display: inline-flex;             
+  justify-content: center;
+}
+
+
+.camera-btn,.location i {
+  color: black;
+  font-size: 18px;
+}
+
+
+.camera-btn,.location:hover {
+  background-color: #f8f9fa;        
+  border-color: #bfc6cc;
+}
+
+.modal-footer{
+  justify-content:space-between
+}
+.d-flex{
+  justify-content: space-between;
+  padding: 4px;
+  gap: 5px
+  }
+  .icon {
+    display: flex;
+    gap: 12px; 
+}
+.nav-tabs{
+  justify-self: center;
+}
+
